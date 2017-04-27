@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Turbolinks 101</title>
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/site.js"></script>
+  </head>
+  <body>
+    
+<div id="counter" data-turbolinks-permanent>
+  <p>Number of downloads: <span>0</span>!</p>
+</div>
+    <div id="player" data-turbolinks-permanent >
+  <p>Listen to my awesome music</p>
+  <button id="play" disabled>Play</button>
+  <button id="pause" disabled>Pause</button>
+</div>
+    <ul class="navigation">
+  <li><a href="/">Home</a></li>
+  <li><a href="/bio/">Bio</a></li>
+  <li><a href="/contact/">Contact</a></li>
+</ul>
+    <h1>Contact</h1>
+
+<form action="/destroy" accept-charset="UTF-8" class="destroy-form" method="post"><input type="hidden" name="_method" value="delete" /><input type="hidden" name="authenticity_token" />  <p>
+    <label for="email" class="first">Email: </label>
+    <input type="email" name="email" />
+  </p>
+  <p>
+    <textarea name="body" cols="100" rows="25">
+</textarea>
+  </p>
+
+  <input type="submit" value="Contact me" />
+</form>
+  </body>
+</html>
